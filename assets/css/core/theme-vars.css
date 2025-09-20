@@ -43,16 +43,20 @@
     --overlay2: #9399b2;
     --overlay1: #7f849c;
     --overlay0: #6c7086;
+    --surface2: #585b70;
+    --surface1: #45475a;
+    --surface0: #313244;
+    --base: #1e1e2e;
     --mantle: #181825;
     --crust: #11111b;
 }
 
 
 .dark {
-    --theme: black; /*hsl(240deg, 21%, 12%); */
+    --theme: #1d1e20; /*hsl(240deg, 21%, 12%); */
     --entry: rgb(46, 46, 51);
     --primary: rgb(218, 218, 219);
-    --secondary: rgb(155, 156, 157);
+    --secondary: rgb(139, 139, 139);
     --tertiary: rgb(75, 76, 78); /* rgb(5, 76, 78); Nice blue! */
     --content: rgb(196, 196, 197);
     --code-block-bg: rgb(46, 46, 51);
