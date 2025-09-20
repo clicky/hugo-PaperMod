@@ -1,10 +1,18 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>{{ .Title | markdownify }}</h1>
+    <header>
+        <h2 style="margin-bottom:20px">Hello friend!</h2>
+        <a style="color:#aaa">I'm an Architect turned software developer who lives in a
+            Bus.</a>
+        <a style="color:#666">I mostly spend my time writing <a href="https://www.rhino3d.com/"
+                style="color:#fff">Rhino</a></a><a style="color:#666"> with my friends.</a>
+        <a style="color:#333">I also travel lots, read, take photos and cook stuff.</a>
     </header>
-    <div class="entry-content">
-        {{ .Content | markdownify }}
+    <img src="/images/me.jpg" style="margin-top:20px" />
+    <div style="text-align: right;">
+        <a style="color:#333;font-size: small;">Photo taken by </a>
+        <a style="color:#666;font-size: small;" href="https://www.instagram.com/przemo.namiecino">Przemo</a>
+        <a style="color:#333;font-size: small;"> on an 8x10 Camera.</a>
     </div>
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
