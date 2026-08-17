@@ -100,7 +100,7 @@
 
 {{- /* RSS */}}
 {{ range .AlternativeOutputFormats -}}
-<link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}">
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}"{{ if eq .MediaType.Type "application/rss+xml" }} title="{{ if eq $.Title site.Title }}{{ site.Title }}{{ else }}{{ with $.Title }}{{ . }} on {{ end }}{{ site.Title }}{{ end }}"{{ end }}>
 {{ end -}}
 {{- range .AllTranslations -}}
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
